@@ -1,6 +1,6 @@
 # Manipulación de estructuras (structs) en archivos binarios
 
-### **El** **propósito de este repositorio es poder ayudar a comprender como guardar, obtener y modificar estructuras luego de que han sido almacenadas en un archivo**, **ya que es fundamental, para el curso de** **manejo e implementación de archivos tener claros estos conceptos**. Por lo que en este repositorio **se desarrolla el** siguiente ejemplo.
+### El propósito de este repositorio es poder ayudar a comprender como guardar, obtener y modificar estructuras luego de que han sido almacenadas en un archivo, ya que es fundamental para el curso de manejo e implementación de archivos tener claros estos conceptos. Por lo que en este repositorio se desarrolla el siguiente ejemplo.
 
 
 
@@ -55,4 +55,4 @@ un menú principal con las siguientes opciones:
 
 El ingreso de profesores y estudiantes tiene un orden aleatorio, esto quiere decir que se puede ingresar un estudiante y luego un profesor o viceversa, tambien ingresar dos estructuras del mismo tipo seguido, en fin no se puede preveer el comportamiento del ingreso de estas estructuras, por lo que es necesario tener estructuras auxiliares para saber en que posición del archivo (posición del puntero) se encuentra cada estructura. Para ello se tiene esta imagen que es el esquema general de lo que se hizo.
 
-![figura 1 - elaboracion propia](https://github.com/edinfusion/MIA_Tutorial/blob/master/images/esquemageneral.png)
+![Esquema general - elaboracion propia](https://github.com/edinfusion/MIA_Tutorial/blob/master/images/esquemageneral.png)
