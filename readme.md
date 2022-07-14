@@ -69,11 +69,23 @@ un menú principal con las siguientes opciones:
 
 Como se puede observar en la imagen anterior, **se tienen 4 tipos de structs, de los cuales uno es de tipo profesor, otro de tipo estudiante y los dos restantes son estructuras auxiliares**. **La estructura con el nombre de "Siguiente", como se observa siempre que se guarda un profesor o estudiante se almacena en forma contigua esta estructura**, esto con el fin de poder saber en que parte del archivo (posición del cursor) esta almacenado el siguiente profesor o estudiante respectivamente **y así poder simular una lista enlazada de profesores y una lista enlazada de estudiantes** los cuales, como se  explicaba anteriormente no tienen por que estar de forma continua, se ingresan en orden aleatorio (ver nuevamente imagen de esquema general y ver las flechas para entender el funcionamiento de estas listas).
 
-**La siguiente estructura auxiliar tiene el nombre de "Indice"** la cual como su nombre lo indica nos dará la dirección de posiciones clave a través de 5 atributos (ver figura 2). **Esta estructura siempre se guardara al inicio del archivo**, con la idea de que haga alusión a su nombre, c**uando aun no se han ingresado profesores o estudiantes 4 de los 5 atributos tienen valor de -1 y el atributo restante contendrá el valor numérico del tamaño del struct indice**, en este struct cada vez que se almacena un profesor o estudiante siempre se actualizan estos valores, como se explica mas adelante. (ver figura 4)
+**La siguiente estructura auxiliar tiene el nombre de "Indice"** la cual como su nombre lo indica nos dará la dirección de posiciones clave a través de 5 atributos (ver figura 2). **Esta estructura siempre se guardara al inicio del archivo**, con la idea de que haga alusión a su nombre, c**uando aun no se han ingresado profesores o estudiantes 4 de los 5 atributos tienen valor de -1 y el atributo restante contendrá el valor numérico del tamaño del struct indice**, en este struct cada vez que se almacena un profesor o estudiante siempre se actualizan estos valores, como se explica mas adelante. (ver figura 3)
 
 ------
 
 ![Estructura Indice](https://github.com/edinfusion/MIA_Tutorial/blob/master/images/struct_indice%20.png "Figura 2") Figura 2
+
+------
+
+Para la comprensión de como se usan estas estructuras, a la hora de almacenar se tienen dos casos, uno cuando no existe ningún profesor/alumno y el segundo donde ya existe un profesor/alumno como se detalla, a continuación:
+
+------
+
+![imagen de caso 1](https://github.com/edinfusion/MIA_Tutorial/blob/104dcf3d3e509798ac302ad2d932a6468c916cbe/images/caso1.png)
+
+------
+
+![imagen de caso 2](https://github.com/edinfusion/MIA_Tutorial/blob/104dcf3d3e509798ac302ad2d932a6468c916cbe/images/caso2%20.png)
 
 ------
 
