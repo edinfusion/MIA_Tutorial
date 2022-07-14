@@ -73,7 +73,7 @@ Como se puede observar en la imagen anterior, **se tienen 4 tipos de structs, de
 
 ------
 
-![Estructura Indice](https://github.com/edinfusion/MIA_Tutorial/blob/54a67e2638351f3f3f609809ccc340968ebfcd58/images/struct_indice.png "Figura 2") Figura 2
+![Estructura Indice](https://github.com/edinfusion/MIA_Tutorial/blob/master/images/struct_indice%20.png "Figura 2") Figura 2
 
 ------
 
