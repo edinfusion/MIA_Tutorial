@@ -55,4 +55,4 @@ un menú principal con las siguientes opciones:
 
 El ingreso de profesores y estudiantes tiene un orden aleatorio, esto quiere decir que se puede ingresar un estudiante y luego un profesor o viceversa, tambien ingresar dos estructuras del mismo tipo seguido, en fin no se puede preveer el comportamiento del ingreso de estas estructuras, por lo que es necesario tener estructuras auxiliares para saber en que posición del archivo (posición del puntero) se encuentra cada estructura. Para ello se tiene esta imagen que es el esquema general de lo que se hizo.
 
-![Esquema general - elaboracion propia](https://github.com/edinfusion/MIA_Tutorial/blob/master/images/esquemageneral.png)
+![Esquema general - elaboracion propia](images/esquemageneral.png)
