@@ -55,11 +55,13 @@ un menú principal con las siguientes opciones:
 4. Salir
      Si es seleccionada esta opción se debe de finalizar la aplicación.
 
-------
+
 
 ### Explicación de como se realizo este ejemplo:
 
 **El ingreso de profesores y estudiantes tiene un orden aleatorio**, esto quiere decir que se puede ingresar un estudiante y luego un profesor o viceversa, también ingresar dos estructuras del mismo tipo seguido, en fin no se puede prever el comportamiento del ingreso de estas estructuras, p**or lo que es necesario tener estructuras auxiliares para saber en que posición del archivo (posición del puntero) se encuentra cada estructura**. Para ello se tiene esta imagen que es el esquema general de lo que se hizo (esquema general - figura 1).
+
+------
 
 ![Esquema general - elaboracion propia](https://github.com/edinfusion/MIA_Tutorial/blob/8e695bc0668e7a327b93088fc10a24b90531f5ce/images/esquemageneral%20.png "Figura 1")  Figura 1
 
@@ -67,4 +69,11 @@ un menú principal con las siguientes opciones:
 
 Como se puede observar en la imagen anterior, **se tienen 4 tipos de structs, de los cuales uno es de tipo profesor, otro de tipo estudiante y los dos restantes son estructuras auxiliares**. **La estructura con el nombre de "Siguiente", como se observa siempre que se guarda un profesor o estudiante se almacena en forma contigua esta estructura**, esto con el fin de poder saber en que parte del archivo (posición del cursor) esta almacenado el siguiente profesor o estudiante respectivamente **y así poder simular una lista enlazada de profesores y una lista enlazada de estudiantes** los cuales, como se  explicaba anteriormente no tienen por que estar de forma continua, se ingresan en orden aleatorio (ver nuevamente imagen de esquema general y ver las flechas para entender el funcionamiento de estas listas).
 
-La siguiente estructura auxiliar tiene el nombre de "Indice" la cual como su nombre lo indica nos dara la direccion de 5 atributos (ver figura 2) 
+**La siguiente estructura auxiliar tiene el nombre de "Indice"** la cual como su nombre lo indica nos dará la dirección de posiciones clave a través de 5 atributos (ver figura 2). **Esta estructura siempre se guardara al inicio del archivo**, con la idea de que haga alusión a su nombre, c**uando aun no se han ingresado profesores o estudiantes 4 de los 5 atributos tienen valor de -1 y el atributo restante contendrá el valor numérico del tamaño del struct indice**, en este struct cada vez que se almacena un profesor o estudiante siempre se actualizan estos valores, como se explica mas adelante. (ver figura 4)
+
+------
+
+![Estructura Indice](https://github.com/edinfusion/MIA_Tutorial/blob/54a67e2638351f3f3f609809ccc340968ebfcd58/images/struct_indice.png "Figura 2") Figura 2
+
+------
+
