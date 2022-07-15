@@ -40,6 +40,7 @@ un menú principal con las siguientes opciones:
 
 
 
+
 1. Registro Profesor
      Si es seleccionada esta opción se le debe de solicitar por medio de consola el ingreso
        de cada uno de los datos que componen al struct Profesor, una vez realizado el ingreso
